@@ -10,7 +10,7 @@ import os
 
 class SshServersIndicator:
 	def __init__(self):
-		self.ind = appindicator.Indicator("ssh-server-box", "icon", appindicator.CATEGORY_APPLICATION_STATUS)
+		self.ind = appindicator.Indicator("ssh-servers-indicator", "icon", appindicator.CATEGORY_APPLICATION_STATUS)
 		self.ind.set_status(appindicator.STATUS_ACTIVE)
 
 		path = os.path.dirname( os.path.realpath(__file__) )
