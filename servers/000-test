@@ -1,0 +1,5 @@
+# config file
+title=Test Server
+host=somehost.com
+user=someuser
+pass=thepassword
