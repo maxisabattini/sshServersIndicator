@@ -8,7 +8,7 @@ import imaplib
 import re
 import os
 
-class SshServersBox:
+class SshServersIndicator:
 	def __init__(self):
 		self.ind = appindicator.Indicator("ssh-server-box", "icon", appindicator.CATEGORY_APPLICATION_STATUS)
 		self.ind.set_status(appindicator.STATUS_ACTIVE)
@@ -74,5 +74,5 @@ class SshServersBox:
 		
 
 if __name__ == "__main__":
-	indicator = SshServersBox()
+	indicator = SshServersIndicator()
 	indicator.main()
