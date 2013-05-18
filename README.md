@@ -12,7 +12,7 @@ AppIndicator for ssh servers connections, is for automatize login to ssh servers
 
 ##Screenshot
 
-![](https://github.com/maxisabattini/sshServersIndicator/blob/master/screenshot.png?raw=true)
+![](https://github.com/maxisabattini/sshServersIndicator/blob/master/screenshot.jpg?raw=true)
 
 
 
