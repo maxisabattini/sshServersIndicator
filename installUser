@@ -15,6 +15,5 @@ fi
 cp "$DIR/*" "$PREFIX/.$APP"
 
 echo "Installing shorcuts"
-
-cp "$DIR/app.desktop" "$PREFIX/.local/share/applications/$APP.desktop"
+cat "$DIR/app.desktop" | sed "s@{EXEC}@$PREFIX/.$APP/$EXE@g" > "$PREFIX/.local/share/applications/$APP.desktop"
 chmod +x "$PREFIX/.local/share/applications/$APP.desktop"
