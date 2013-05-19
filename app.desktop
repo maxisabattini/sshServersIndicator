@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Ssh Servers Indicator
+Comment=Organize your ssh connections
+Exec=sshServersIndicator
+StartupNotify=false
+Terminal=false
+Type=Application
+Icon=terminal

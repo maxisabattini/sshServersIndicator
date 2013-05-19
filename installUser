@@ -1,0 +1,20 @@
+#!/bin/bash
+
+APP="sshServersIndicator"
+PREFIX=$HOME
+EXE="sshServersIndicator.py"
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+echo "Installing files"
+
+if [ ! -d "$PREFIX/.$APP" ];then 
+ mkdir "$PREFIX/.$APP"
+fi
+
+cp "$DIR/*" "$PREFIX/.$APP"
+
+echo "Installing shorcuts"
+
+cp "$DIR/app.desktop" "$PREFIX/.local/share/applications/$APP.desktop"
+chmod +x "$PREFIX/.local/share/applications/$APP.desktop"
