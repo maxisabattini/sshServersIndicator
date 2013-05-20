@@ -12,7 +12,7 @@ if [ ! -d "$PREFIX/share/$APP" ];then
  mkdir "$PREFIX/share/$APP"
 fi
 
-cp "$DIR/*" "$PREFIX/share/$APP"
+eval cp "$DIR/*" "$PREFIX/share/$APP"
 
 echo "Installing shorcuts"
 ln -s "$PREFIX/share/$APP/$EXE" "$PREFIX/bin/$APP" 

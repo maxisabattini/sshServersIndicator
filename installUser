@@ -12,7 +12,7 @@ if [ ! -d "$PREFIX/.$APP" ];then
  mkdir "$PREFIX/.$APP"
 fi
 
-cp "$DIR/*" "$PREFIX/.$APP"
+eval cp -R $DIR/\* $PREFIX/.$APP
 
 echo "Installing shorcuts"
 cat "$DIR/app.desktop" | sed "s@{EXEC}@$PREFIX/.$APP/$EXE@g" > "$PREFIX/.local/share/applications/$APP.desktop"
